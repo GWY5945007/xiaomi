@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="image/xmi-logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bass.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide">Slide 1</div>
+	        <div class="swiper-slide">Slide 2</div>
+	        <div class="swiper-slide">Slide 3</div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+	</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>   <!-- herf 引入外部链接  src 引入外部文件 -->
+<script src="js/swiper.min.js"></script>    <!-- js最好放置最底部 -->
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {     
+    // direction: 'vertical',
+    loop: true,
+    autoplay: true,
+    effect : 'fade',
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })        
+  </script>
+
+
+  <!-- var 声明变量  new 关键字 可以不断创建实例化对象 loop 循环  -->
